@@ -9,7 +9,8 @@ Các bước để debug dùng tracepoint trong GNU & ví dụ thực tế:
         + sudo ./server
 2. Tìm process ID của tiến trình:
    - Ví dụ: ID của tiến trình server là 8421
-   ![image](https://github.com/user-attachments/assets/b792ec5b-2d76-4a05-bb7c-8e76930c2c0a)
+   ![test](https://github.com/user-attachments/assets/ade2e99f-01a1-447e-b987-cb3e93da04be)
+
 
 3. Thiết lập gdbserver để lắng nghe trên cổng mong muốn:
     - Ví dụ: sudo gdbserver --multi --once localhost:55555
