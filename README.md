@@ -29,16 +29,16 @@ Các bước để debug dùng tracepoint trong GNU & ví dụ thực tế:
 
     - Dùng các lệnh để debug, hiển thị thông tin read_ret cũng như buffer khi client gửi tin nhắn đến server:
         + info threads hiển thị thông tin các luồng đang chạy
-          ![image](https://github.com/user-attachments/assets/4a8fa928-6b60-4bc7-993d-a3817dd8968a)
+          ![2](https://github.com/user-attachments/assets/e3c11d8e-230c-4af2-a16b-4ae030f974de)
 
         + trace server.cpp:106 để đặt tracepoint tại line number 106 & actions 1 (với 1 là id của tracepoint) để đặt action tương ứng là 'collect read_ret' để đọc giá trị read_ret
-          ![image](https://github.com/user-attachments/assets/026a3f3d-ac3d-4412-828b-3b8a4ab9c6df)
+          ![3](https://github.com/user-attachments/assets/fc165f89-7419-40f3-a262-91333e21bf2c)
           
-          ![image](https://github.com/user-attachments/assets/cc09271a-ee30-4ec1-8740-ba493fbf3b1b)
-
+          ![4](https://github.com/user-attachments/assets/ad9ca1ef-24be-4393-82d7-152493cd1239)
 
         + tstart để khởi chạy debug, thu thập các frame để hiển thị thông tin các biến
         + tstatus hiển thị trạng thái đang debug như thế nào, số frame thu thập được,...
         + tstop dừng debug
         + tfind x để tìm frame x tương ứng, kết hợp với tdump để thực hiện actions được thực hiện với frame x
-          ![image](https://github.com/user-attachments/assets/85d91db9-60d6-4caf-b06e-c8383e8307d7)
+         ![5](https://github.com/user-attachments/assets/2b1c6995-10d7-4553-8713-62c2c722c409)
+
