@@ -14,7 +14,7 @@ Các bước để debug dùng tracepoint trong GNU & ví dụ thực tế:
 
 3. Thiết lập gdbserver để lắng nghe trên cổng mong muốn:
     - Ví dụ: sudo gdbserver --multi --once localhost:55555
-   ![image](https://github.com/user-attachments/assets/92bfb26a-8b42-4dd9-95fa-1c7b3a382655)
+   ![test](https://github.com/user-attachments/assets/5f635e46-2820-4596-8075-e0b7db26fb37)
 
 4. Thiết lập kết nối từ gdbclient và debug lỗi dùng tracepoint:
    - Thiết lập kết nối & gắn tiến trình:
